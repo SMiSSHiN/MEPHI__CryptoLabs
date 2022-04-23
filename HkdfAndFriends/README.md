@@ -5,7 +5,7 @@
 Интерфейс реализованного класса:
 ```py
 class HKDF():
-    def __init__(self, salt, IKM, info, L)
+    def __init__(self, salt, IKM, info, L):
 
     def __extract(self):        # HKDF-Extract(salt, IKM) -> PRK
     def __expand(self, PRK):    # HKDF-Expand(PRK, info, L) -> OKM
@@ -18,16 +18,16 @@ class HKDF():
 Интерфейс реализованного класса:
 ```py
 class PBKDF2():
-    def __init__(self, P, S, c, dkLen)
+    def __init__(self, P, S, c, dkLen):
 
     @property
-    def P(self)
+    def P(self):
     @P.setter
-    def P(self, P)
+    def P(self, P):
 
-    def __F(self, i)        # F(P, S, c, i) = U_1 \xor U_2 \xor ... \xor U_c
+    def __F(self, i):        # F(P, S, c, i) = U_1 \xor U_2 \xor ... \xor U_c
 
-    def calculate(self)
+    def calculate(self):
 ```
 
 # Результаты работы
